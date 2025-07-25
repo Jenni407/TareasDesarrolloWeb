@@ -1,0 +1,41 @@
+body {
+    font-family: 'Times New Roman', Times;
+    margin: 0;
+    padding: 20px;
+    background-color: #d3ccd2; /* Color de fondo claro */
+}
+
+header {
+    background-color: #e7b2f1;
+    color: #000; /* Color del texto */
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #b894c4;
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 20px; /* Elimina el padding por defecto */
+    margin: 15px; /* Elimina el margen por defecto */
+    display: flex; /* Utiliza flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra los elementos en la barra de navegación */
+}
+
+nav ul li {
+    margin: 0px 15px; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: blue; /* Color del texto de los enlaces */
+    font-weight: bold; /* Hace que el texto sea negrita */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #bbadc5; /* Color de fondo claro para la sección */
+    margin: 0;
+}

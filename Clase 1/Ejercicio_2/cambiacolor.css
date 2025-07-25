@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #977474;
+    margin: 0;
+    padding: 200px;
+    font-size: 70px;
+    line-height: 1.6;
+}
+
+button {
+    font-size: 14px; /* Tamaño de la letra del botón */
+    padding: 20px 30px; /* Tamaño del botón (alto x ancho) */
+}

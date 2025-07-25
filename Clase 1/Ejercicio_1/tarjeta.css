@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(197, 234, 247);
+    text-align: center;
+    padding: 70px;
+    
+}
+
+.tarjeta {
+    background-color :rgb(235, 235, 223);    
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 2  0px;
+    width: 600px;
+    margin: auto;   
+}
+
+h1 {
+    color: navy;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+p{
+    color: #333;    
+    font-family: Verdana;
+    font-size: 18px;    
+    margin: 20px 0;
+    line-height: 1.6;
+}

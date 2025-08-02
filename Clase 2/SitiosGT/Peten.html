@@ -1,0 +1,133 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petén - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+       <!-- Botón de apertura del menú -->
+       <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+       <main>
+           <h1>Departamento de Petén</h1>
+           <h2>Flores</h2>
+   
+           <!-- Imagen con Modal -->
+           <img id="MyImg" src="Imagenes/Img_peten.jpg" alt=" Flores" style="width:100%; max-width: 300px;">
+   
+           <!-- Modal -->
+           <div id="myModal" class="modal">
+               <span class="close">&times;</span>
+               <img class="modal-content" id="img01">
+               <div id="caption"></div>
+           </div>
+   
+           <!-- Descripción -->
+           <p>
+                El departamento de Petén es el más grande de Guatemala, ubicado en la región norte del país. Su capital es Flores, una hermosa isla en el Lago Petén Itzá. 
+                Petén es famoso por sus impresionantes sitios arqueológicos mayas, como Tikal, que es Patrimonio de la Humanidad y uno de los destinos turísticos más importantes del país.
+                El departamento de Petén es el más extenso que posee la República de Guatemala. Así mismo, tiene uno de los lagos más grandes, el cual es conocido como Petén Itzá.
+                Gran parte de la selva se encuentra en este territorio, así como los vestigios de la civilización maya en el país. A su jurisdicción pertenecen 14 municipios, siendo Flores su cabecera departamental.
+           </p>
+              <p>
+                Petén es un destino ideal para los amantes de la naturaleza y la historia, con una biodiversidad rica y paisajes impresionantes que incluyen selvas, ríos y lagos.
+              </p>
+   
+           <!-- Ubicación Geográfica -->
+              <h3>Ubicación:</h3>
+              <p>Petén se encuentra en el norte de Guatemala, limitando al norte con México y al este con Belice. Su capital es Flores, situada en una isla en el Lago Petén Itzá.</p>
+   
+           <!-- Actividades -->
+           <h3>Conoce estos lugares que debes visitar si viajas a Petén:</h3>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="Imagenes/crater_peten.jpg" alt ="Lights" style="width:100%">
+  <h3>Cráter azúl</h3>
+   <p>
+    Uno de los lugares que puedes visitar es una serie de nacimientos y arroyos de aguas cristalinas: el Cráter Azul, ubicado en Las Cruces, Petén.
+   </p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="Imagenes/parque_peten.jpg" alt="Lights" style="width:100%">
+  <h3>Parque Natural Ixpanpajul </h3>
+  <p>
+    El Parque Natural Ixpanpajul Se encuentra dentro de un esplendoroso bosque, es refugio natural de una amplia variedad de animales, plantas y árboles, ubicado en el Km. 468 Carretera vía Río Dulce hacia Flores, Petén.
+  </p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="Imagenes/cuevas_peten.jpg" alt="Lights" style="width:100%">
+  <h3>Cuevas de Naj Tunich </h3>
+  <p>
+    Estas cuevas descubiertas en 1979 son un sitio que tienes que conocer, cuenta con mucha historia ubicado en el Sureste de Petén a 7 km. de la frontera con Belice.
+  </p>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="Imagenes/yaxhá_peten.jpg" alt="Lights" style="width:100%">
+    <div class="text"></div>
+    <h3>Yaxhá </h3>
+    <p>
+      Yaxhá es una ciudad maya enorme con majestuosos templos, desde edificios de gobierno, plazas ceremoniales, campo de juego de pelota y observatorio astronómico ubicado en el Parque Nacional Yaxhá, Petén.
+    </p>
+ </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="Imagenes/rosario_peten.jpg" alt ="Lights" style="width:100%">
+    <h3>Parque Nacional el Rosario </h3>
+    <p>
+      El Rosario constituye un oasis de naturaleza cerca del poblado de Sayaxché, dentro del parque se encuentra la laguna, que es el atractivo más importante.
+    </p>
+ </div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+           <button id="theme-toggle">Modo oscuro</button>
+       </main>
+   
+       <script src="Script.js"></script>
+   </body>
+   </html>

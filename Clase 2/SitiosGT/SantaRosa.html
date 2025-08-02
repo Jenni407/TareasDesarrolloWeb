@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Rosa - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Santa Rosa</h1>
+        <h2>Cuilapa</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_santarosa.jpeg" alt=" Santa Rosa " style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            Santa Rosa es un departamento de Guatemala que por sus habitantes es descrito como "El centro de las Américas". El nombre del departamento es de origen español y corresponde a una santa dominica. El pueblo fue fundado en 1852, como Nuestra Señora de los Dolores o De La Candelaria de los Esclavos, ya que aquí fueron sometidos los primeros esclavos que sirvieron a los españoles.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p> se encuentra en la región sureste de Guatemala, su cabecera departamental es Cuilapa, ubicada a 36 km de la ciudad capital. Tiene una extensión territorial de 2,955 km².</p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos visitar en Santa Rosa:</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/laguna_santarosa.jpg" alt = "Lights" style="width:100%">
+<h3>Laguna de ayarza</h3>
+   <p>
+    La Laguna de Ayarza es una de las lagunas más impresionantes de Guatemala, en ella se pueden hacer actividades extremas como bucear y kayak. Conocida como Espejo de Santa Rosa, esta hermosa laguna tiene una extensión de 14 kilómetros cuadrados y está a 1409 kilómetros por encima del nivel del mar. 
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/playa_santarosa.jpg" alt = "Lights" style="width:100%">
+<h3>Playa Las Lisas</h3>
+<p>
+    Playa Las Lisas es una playa ubicada en el municipio de Taxisco, Santa Rosa. Es conocida por su belleza natural y sus aguas tranquilas, lo que la convierte en un destino popular para los amantes del sol y el mar. La playa ofrece diversas actividades acuáticas y es un lugar ideal para relajarse y disfrutar de la naturaleza.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/monterrico_santarosa.jpg" alt = "Lights" style="width:100%">
+<h3>Playa Monterrico</h3>
+<p>
+    Con playa muy amplia, un clima espectacular y unos atardeceres inigualables, definitivamente Monterrico es uno de los mejores destinos con los que este departamento cuenta.
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/canal_santarosa.jpg" alt = "Lights" style="width:100%">
+ <h3>Canal de Chiquimulilla</h3>
+ <p>
+    Se encuentra muy cerca del mar, pero la división que se ha formado gracias a las plantas y vegetación es impresionante. Lo mejor de todo es que puedes atravesar este canal en lancha para poder conocer todos sus rincones, durante el recorrido verás garzas volando, peces y muchos tipos de plantas.
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/catarata_santarosa.jpg" alt = "Lights" style="width:100%">
+ <h3>Catarata los Amates</h3>
+ <p>
+    Las cataratas Los Amates es considerada entre las más altas de Guatemala, con una belleza inigualable. Tiene un
+    imponente tamaño debido a que su alto supera los 50 metros de caída y 20 metros de longitud.
+         </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

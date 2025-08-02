@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huehuetenango - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Huehuetenango</h1>
+        <h2>Huehuetenango</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_huehuetenango.jpg" alt=" Huehuetenango " style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            La ciudad de Huehuetenango fue fundada por Gonzalo de Alvarado en 1524 al finalizar la conquista de la antigua capital
+            precolombina de los mames: Zaculeu que significa Tierra Blanca. Mucha gente descendiente de los mames, aún vive en los
+            municipios aledaños al Municipio de Huehuetenango y las ruinas del antiguo centro ceremonial de Zaculeu constituyen una
+            atracción turística ubicada a cuatro kilómetros del parque Central de la ciudad. Huehuetenango es uno de los departamentos donde más idiomas se hablan en Guatemala. Además del español, también se habla
+            el mam, tectiteco, aguacateco, chuj, popti’ y kanjobal, entre otros.
+            
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>La ciudad de Huehuetenango se encuentra a una
+            distancia de aproximadamente 264 km de la ciudad
+            capital de Guatemala.</p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos en tu visista a Huehuetenango:</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/cenote_huehue.jpeg" alt = "Lights" style="width:100%">
+<h3>Cenote de Candelaria  </h3>
+   <p>
+    Se trata de dos pozas de agua cristalina conectadas por una serie de ríos subterráneos, un destino simplemente
+    impresionante. En este lugar puedes descubrir la naturaleza como nunca antes, el agua es trasparente y hermosa.
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/ruinas_huehue.jpg" alt = "Lights" style="width:100%">
+<h3>Ruinas de Zaculeu</h3>
+<p>
+    Considerada como la ciudad más importante del señor mam, Zaculeu, contiene un enorme complejo de templos y campos que
+    eran utilizados por los mayas para el juego de pelota. Zaculeu fue la capital del reino mam y tuvo auge durante el
+    Período Clásico.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/cimarron_huehue.jpg" alt = "Lights" style="width:100%">
+<h3>El Cimarrón</h3>
+<p>
+    Este es un cenote vacío, ya que no contiene agua, pero sí hay árboles de 25 a 30 metros de altura. Entre la flora de los
+    bosques se encuentran especies de encinos, pinos, copales y nances. 
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/mirador_huehue.jpeg" alt = "Lights" style="width:100%">
+ <h3>Mirador Juan Diéguez Olaverri</h3>
+ <p>
+    Situado a 12 kilómetros de ascenso hacia Todos Santos Cuchumatán, el Mirador Juan Diéguez Olaverri es de los sitios más
+    populares de Huehuetenango debido a que en él se puede apreciar una vista maravillosa de nubes, volcanes y mucha
+    naturaleza pintoresca.
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/laguna_huehue.jpg" alt = "Lights" style="width:100%">
+ <h3>Laguna Magdalena</h3>
+ <p>
+    es un lugar hermoso y muy tranquilo, justo para escuchar la naturaleza. Esta laguna es un verdadero paraíso, ya que el
+    agua va cambiando de color dependiendo del sol y de la posición en la que se encuentra.
+     </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

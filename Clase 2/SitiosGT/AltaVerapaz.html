@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Verapaz - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Alta Verapaz</h1>
+        <h2>Cobán</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_altaverapaz.jpg" alt=" Alta Verapaz " style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            Ademas del castellano, en la región se hablan idiomas mayas como el q'eqchi', poqomchi', achi' y kaqchikel. El departamento de Alta Verapaz fue creado el 4 de mayo de 1877, por decreto del entonces presidente de la República, Justo Rufino Barrios. Su nombre proviene de la unión de dos palabras: "Alta" que significa "alta" o "superior" y "Verapaz" que se traduce como "paz verdadera".
+            El nombre "Verapaz" se deriva de la resistencia de los pueblos indígenas a la  conquista española, quienes, a pesar de la lucha, lograron establecer una paz duradera en la región. La Alta Verapaz es conocida por su rica biodiversidad, paisajes montañosos y su cultura indígena vibrante.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>Ubicado aproximadamente a 200 km de la Ciudad de Guatemala. Limita al norte con Petén; al este con Izabal; al sur con Zacapa, El Progreso y Baja Verapaz; y al oeste con El Quiché.  </p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos visitar en Alta Verapaz :</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/parque_altaverapaz.jpg" alt = "Lights" style="width:100%">
+<h3>Parque Ecológico Orquigonia</h3>
+   <p>
+    Es un hermoso parque ecológico que alberga una gran variedad de orquídeas y otras plantas nativas. Es un lugar ideal para disfrutar de la naturaleza y aprender sobre la flora local. Se encuentra en el municipio de Cobán, Alta Verapaz.
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/grutas_altaverapaz.jpg" alt = "Lights" style="width:100%">
+<h3>Grutas del Rey Marcos</h3>
+<p>
+    Estas impresionantes grutas son un sistema de cuevas subterráneas que ofrecen una experiencia única de exploración. Las formaciones rocosas y las estalactitas crean un ambiente mágico y misterioso. Se encuentran en el municipio de Santa Cruz Verapaz, Alta Verapaz.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/semuc_altaverapaz.jpeg" alt = "Lights" style="width:100%">
+<h3>Semuc Champey</h3>
+<p>
+    Es un destino turístico famoso por sus impresionantes formaciones de piedra caliza y sus piscinas naturales de agua turquesa. Es un lugar ideal para nadar, hacer senderismo y disfrutar de la belleza natural. Se encuentra en el municipio de Lanquín, Alta Verapaz.
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/reserva_bajaverapaz.jpg" alt = "Lights" style="width:100%">
+ <h3>Reserva Natural Ram Tzu</h3>
+ <p>
+    Área protegida que se creó para la conservación del hábitat del quetzal.  Cuenta con un mirador que te permite conectar con la naturaleza de manera inigualable, ya que puedes observar la flora y fauna del lugar.
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/victorias_altaverapaz.jpg" alt = "Lights" style="width:100%">
+ <h3>Parque Nacional las victorias</h3>
+ <p>
+    Es un parque nacional que alberga una gran variedad de flora y fauna, incluyendo especies en peligro de extinción. Es un lugar ideal para hacer senderismo, observar aves y disfrutar de la naturaleza. Se encuentra en el municipio de Cobán, Alta Verapaz.
+     </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

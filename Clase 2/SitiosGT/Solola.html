@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sololá - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Sololá</h1>
+        <h2>Sololá</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_solola.jpg" alt=" Sololá" style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            se caracteriza por su rica cultura maya, hermosos paisajes alrededor del Lago de Atitlán y la producción agrícola
+            diversificada. Su ubicación geográfica en la sierra, con clima templado, favorece el cultivo de café, cebolla,
+            zanahoria, maíz, frijol y frutas como el durazno y jocote. La ciudad de Sololá es conocida por su feria titular en
+            agosto y por la influencia de las etnias Tz'utujil, K'iche' y Kakchiquel en su cultura.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>Se encuentra en el altiplano occidental de Guatemala, a orillas del Lago de Atitlán. 
+        </p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos visitar en Sololá:</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/pedro_solola.jpg" alt = "Lights" style="width:100%">
+<h3>San Pedro la Laguna</h3>
+   <p>
+    San Pedro La Laguna es un hermoso lugar para visitar debido a que también cuenta con una vista inolvidable llena de colores y el hermoso lago al fondo. 
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/toliman_solola.jpg" alt = "Lights" style="width:100%">
+<h3>San Lucas Tolimán</h3>
+<p>
+    Este es un municipio del departamento de Sololá que se encuentra en la región sur occidente de la República de
+    Guatemala. San Lucas Tolimán está localizado a orillas del Lago de Atitlán y en las faldas del Volcán Tolimán. En este
+    lugar puedes observar lindos paisajes por su ubicación y también realizar actividades extremas como escalar el volcán,
+    senderismo y nadar a orillas del Lago.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/mirador_solola.jpg_large" alt = "Lights" style="width:100%">
+<h3>Mirador Kaqasiiwaan</h3>
+<p>
+    El Mirador Kaqasiiwaan en San Juan La Laguna es un lugar impresionante que ofrece una de las vistas más espectaculares. Desde allí se puede apreciar una panorámica de 360 grados del Lago de Atitlán, los pueblos aledaños y los volcanes San Pedro, Atitlán y Tolimán. 
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/mirador2_solola.jpg" alt = "Lights" style="width:100%">
+ <h3>Mirador Rostro Maya</h3>
+ <p>
+    Este hermoso mirador se encuentra en San Juan La Laguna y es uno de los más hermosos que existen en el país. Además del espectacular panorama que podrás observar desde este punto del lago de Atitlán, también se puede ver un rostro que parece una persona que estuviera acostada. 
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/reserva_solola.jpg" alt = "Lights" style="width:100%">
+ <h3>Reserva Natural Atitlán</h3>
+ <p>
+    Puedes disfrutar de la increíble vista y los espectaculares volcanes que rodean al Lago Atitlán. Los cables, el mariposario, los senderos, los puentes colgantes y los alojamientos de la reserva te acercan a la naturaleza. En el Mariposario observarás los colores y formas de cientos de mariposas, rodeado de flores y el sonido de las aguas.         </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacapa - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+        
+    
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Zacapa</h1>
+        <h2>Zacapa</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_zacapa.jpg" alt="Zacapa" style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            conocido por su clima cálido y su producción de ron, queso y tabaco. Es un área con terreno principalmente plano, ideal para la agricultura de melón, tabaco y tomates. 
+            Por costumbre heredada de los migrantes venidos de España, los habitantes del oriente de Guatemala destacan por el gusto y afición a los juegos de azar.
+También se realizan competencias de habilidad física como las carreras de listones o de argollas, las corridas de toros y jaripeos.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>
+            se encuentra a 148 km al este de la Ciudad de Guatemala, a orillas del Río Grande de Zacapa, y a una altitud de 120 metros sobre el nivel del mar </p>         
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos si decides viajar a Zacapa</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/olvido_zacapa.jpg" alt = "Lights" style="width:100%">
+<h3>Montaña El Olvido Zacapa</h3>
+   <p>
+    Alberga diversos ecosistemas exóticos, especies de flora y fauna, que por cierto, incluye a nuestra ave símbolo nacional, el quetzal. Sal de la rutina y disfruta de un día entretenido.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/valle_zacapa.jpg" alt = "Lights" style="width:100%">
+<h3>Valle Dorado</h3>
+<p>
+    Es un parque acuático para compartir, ya que existen atracciones para niños y para adultos. Si eres amante de las piscinas y te encanta sumergirte en el agua, este es el lugar ideal cuando visites el caluroso clima de Zacapa.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/rio_zacapa.jpg" alt = "Lights" style="width:100%">
+<h3>Río el Lobo</h3>
+<p>
+    El conocido Río el Lobo es un sitio que vale la pena visitar, ya que el agua es muy limpia y se observa un paisaje rocoso muy interesante. Lo mejor es que el agua nace en las faldas de la Sierra de las Minas. 
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/museo_zacapa.jpg" alt = "Lights" style="width:100%">
+ <h3>Museo del Ferrocaril</h3>
+ <p>
+Interesante por la historia que contiene, podrás observar cómo eran los trenes de la época. También en las oficinas principales puedes tomarte una fotografía como administrador u operador de comunicaciones.
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/mirador_zacapa.jpg"Lights" style="width:100%">
+ <h3>Mirador Gualán</h3>
+ <p>
+    Disfruta de la naturaleza en un espacio ubicado entre el bosque lo que le permite tener vistas privilegiadas. Algunos de sus atractivos son sus miradores, senderos, parques ecológicos, restaurante y hotel. 
+</p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

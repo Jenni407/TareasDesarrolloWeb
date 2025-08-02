@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja Verapaz - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Baja Verapaz</h1>
+        <h2>Salamá</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_bajaverapaz.jpg" alt=" Baja Verapaz " style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            Baja Verapaz se instituyó como departamento el 4 de mayo de 1877, por decreto, cuando la región de las Verapaces se
+            dividió. Su nombre, originalmente era Tucurután,según lo indica el Diccionario Geográfico Nacional. No se conoce un significado exacto para el nombre, pero se
+            encuentran algunas referencias en las que se dice que el vocablo significa "Tierra de Guerra” debido a la resistencia de
+            los nativos hacia los conquistadores españoles, quienes, en posición contraria, le dieron el nombre de Verapaz (Paz
+            Verdadera). Esto se debe al hecho de que, aunque los nativos se resistieron de gran manera a los conquistadores, la unión del departamento se logró de manera pacífica.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>Se encuentra ubicado en la región norte de la República de Guatemala. Este departamento cuenta con una extensión territorial aproximada de 3,124 km².</p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos en tu visita a Baja Verapaz:</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/chilasco_bajaverapaz.jpg" alt = "Lights" style="width:100%">
+<h3>Cascada salto de Chilascó</h3>
+   <p>
+    Es un hermosa cascada con una altura de 133 metros, Para llegar debes caminar entre naturaleza, ya que se encuentra dentro de una reserva natural en la que puedes ir observando otras caídas de agua.
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/museo_bajaverapaz.jpg" alt = "Lights" style="width:100%">
+<h3>Museo  Regional del Trapiche</h3>
+<p>
+    En el podrás observar arte de la historia azucarera de Guatemala, ya que este fue el primer ingenio de azúcar morena en
+    Guatemala y ahora puedes observarlo en exhibición. Ubicado en San Jerónimo, Baja Verapaz, Guatemala.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/cimarron_huehue.jpg" alt = "Lights" style="width:100%">
+<h3>El Cimarrón</h3>
+<p>
+    Este es un cenote vacío, ya que no contiene agua, pero sí hay árboles de 25 a 30 metros de altura. Entre la flora de los
+    bosques se encuentran especies de encinos, pinos, copales y nances. 
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/reserva_bajaverapaz.jpg" alt = "Lights" style="width:100%">
+ <h3>Reserva Natural Ram Tzu</h3>
+ <p>
+    Área protegida que se creó para la conservación del hábitat del quetzal.  Cuenta con un mirador que te permite conectar con la naturaleza de manera inigualable, ya que puedes observar la flora y fauna del lugar.
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/sierra_bajaverapaz.jpg" alt = "Lights" style="width:100%">
+ <h3>Sierra las minas</h3>
+ <p>
+    Es una espectacular cadena de montañas, alberga 885 especies de mamíferos, aves y reptiles que representan el 70% de toda las
+    especies registradas en Guatemala y en Belice.
+     </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

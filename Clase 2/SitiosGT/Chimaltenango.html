@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimaltenango - SitiosGT</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Inicio</a>
+        <a href="Quiche.html">Quiché</a>
+        <a href="Peten.html">Petén</a>
+        <a href="Izabal.html">Izabal</a>
+        <a href="SanMarcos.html">San Marcos</a>
+        <a href="Huehuetenango.html">Huehuetenango</a>
+        <a href="BajaVerapaz.html">Baja Verapaz</a>
+        <a href="AltaVerapaz.html">Alta Verapaz</a>
+        <a href="Chimaltenango.html">Chimaltenango</a>
+        <a href="SantaRosa.html">Santa Rosa</a>
+        <a href="Solola.html">Sololá</a>
+        <a href="Chiquimula.html">Chiquimula</a>
+        <a href="Escuintla.html">Escuintla</a>
+        <a href="Retalhuleu.html">Retalhuleu</a>
+        <a href="Zacapa.html">Zacapa</a>
+        <a href="Jalapa.html">Jalapa</a>
+    </div>
+
+    <!-- Botón de apertura -->
+    <span style="font-size:30px;cursor:pointer;position:fixed;top:10px;left:10px;" onclick="openNav()">&#9776; Menú</span>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h1>Departamento de Chimaltenango</h1>
+        <h2>Chimaltenango</h2>
+
+        <!-- Imagen con Modal -->
+        <img id="MyImg" src="Imagenes/img_chimaltenango.jpg" alt=" Chimaltenango " style="width:100%; max-width: 450px;">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Descripción -->
+        <p>
+            En 1462 el grupo cakchiquel se separó del dominio k’iché y fundó su capital en una nueva región, en el lugar llamado
+            Iximché. Más tarde, colonizada por los españoles, se le conoció como la Provincia de Chimaltenango.Se atribuye a Don
+            Pedro de Portocarrero la fundación de la cabecera departamental de Chimaltenango en 1526. Durante 1825 Chimaltenango y
+            Sacatepéquez formaban un solo departamento. Fue hasta el 12 de septiembre de 1839 cuando la Asamblea Constituyente los
+            dividió.
+        </p>
+        <!-- Ubicación Geográfica -->
+         <h3>Ubicación:</h3>
+         <p>Está ubicado en la región Central de la República de Guatemala. a 52 km de la Ciudad de Guatemala en la República de Guatemala. </p>
+        <!-- Actividades -->
+        <h3>Conoce estos lugares que te recomendamos visitar en Chimaltenango:</h3>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<div class="numbertext">1 / 5</div>
+<img src="Imagenes/aposentos_chimaltenango.jpg" alt = "Lights" style="width:100%">
+<h3>Parque Nacional los Aposentos</h3>
+   <p>
+    Cuenta con una gran pileta en donde encontrarás distintas canoas, patos y cisnes. Lo mejor es que tienen muchas opciones de entretenimiento y servicios, desde churrasqueras hasta un canopy que atraviesa la laguneta.
+   </p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 5</div>
+<img src="Imagenes/mixcoviejo_chimaltennago.jpg" alt = "Lights" style="width:100%">
+<h3>Mixco Viejo Parque Arqueológico</h3>
+<p>
+    Es un sitio arqueológico maya que fue una de las ciudades más importantes de la civilización maya. Puedes explorar las ruinas, aprender sobre la historia y disfrutar de vistas panorámicas. Se encuentra en el municipio de San Martín Jilotepeque, Chimaltenango.
+</p>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 5</div>
+<img src="Imagenes/acatengango_chimaltenango.jpg" alt = "Lights" style="width:100%">
+<h3>Volcán Acatenango</h3>
+<p>
+    Es un volcán activo que ofrece una experiencia de senderismo única. Puedes subir hasta la cima para disfrutar de vistas impresionantes y, si tienes suerte, ver erupciones del volcán Fuego cercano. Se encuentra en el municipio de Acatenango, Chimaltenango.
+</p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">4 / 5</div>
+ <img src="Imagenes/iximche_chimaltenango.jpg" alt = "Lights" style="width:100%">
+ <h3>Sitio Arqueológico Iximché</h3>
+ <p>
+    Es un sitio arqueológico maya que fue la capital del reino cakchiquel. Puedes explorar las ruinas, aprender sobre la historia y disfrutar de la belleza natural de la zona. Se encuentra en el municipio de Tecpán Guatemala, Chimaltenango.
+ </p>
+</div>
+
+<div class="mySlides fade">
+ <div class="numbertext">5 / 5</div>
+ <img src="Imagenes/casaxara_chimaltenango.jpg" alt = "Lights" style="width:100%">
+ <h3>Casa Xara y Molino</h3>
+ <p>
+    Esta casa ofrece una experiencia única. Anteriormente una finca familiar que funcionaba como molino de trigo desde
+    1924, en 2005 se transformó en un conjunto de casas conocido como Casa Xara, en honor al nombre Kaqchikel de un ave
+    local.
+         </p>
+</div>
+<br>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center;">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+</div>
+        <button id="theme-toggle">Modo oscuro</button>
+    </main>
+
+    <script src="Script.js"></script>
+</body>
+</html>

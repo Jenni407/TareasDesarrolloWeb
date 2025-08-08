@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Coca-Cola</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+
+    <div class="header">
+      <img src="../Imagenes/logo.png" alt="Logo Coca-Cola" class="logo">
+      <h1>Contacta con nosotros</h1>
+    </div>
+    
+    <div class="navbar">
+      <a href="index.html" >Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="noticias.html">Noticias </a>
+      <a href="sostenibilidad.html">Responsabilidad social</a>
+      <a href="contacto.html">Contacto</a>
+
+      <div class="dark-mode-toggle">
+        <label for="darkModeToggle">Modo Oscuro</label>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle"> 
+          <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+        
+          <div class="main">   
+            
+                  <div class="contacto-container"> 
+                   <div class="contacto-info">
+                    <h2>Datos del contacto atención al cliente</h2>
+                    <p> Puede contactarnos a través de los siguientes medios:</p>
+                      <p><b>Llamadas:</b> <a href="tel:+50235995970">+502 35995970</a></p>
+                      <p> <b>WhatsApp:</b> <a href="https://wa.me/59588391" target="_blank">+502 59588391</a></p>
+                       </div>
+                       <div class="contacto-info">
+                      <h2>Nuestra sede corporativa</h2>
+              <p><b>Dirección:</b> Agencia Coca Cola, Zona Norte, Ciudad de Guatemala, Guatemala.</p>
+              <p><b>Horario de atención:</b> Lunes a Viernes, 8:00 AM - 5:00 PM</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247104.6770664247!2d-90.633623!3d14.598473!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a2a8a18f0987%3A0x4bfba48d8326f34d!2sAgencia%20Coca%20Cola%2C%20Zona%20Norte!5e0!3m2!1ses!2sco!4v1754612494275!5m2!1ses!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>       
+              <form onsubmit="return validarFormulario();">
+                <h2>Otras consultas</h2>
+                <p>Si tiene alguna pregunta, comentario o inquietud, no dude en hacernoslo llegar por medio de este formulario.</p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required placeholder="Tu nombre...">
+        
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required placeholder="tuemail@ejemplo.com">
+        
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" required placeholder="Motivo del mensaje...">
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+        
+                <button type="submit">Enviar</button>
+              </form>
+              
+            </div>
+          </div>
+          
+    <div class="footer">
+      <p>&copy; 2025 Coca-Cola Company. </p>
+      <p>Síguenos en nuestras redes sociales: 
+        <a href="https://www.facebook.com/cocacola" target="_blank">Facebook</a> |  
+        <a href="https://www.instagram.com/cocacola" target="_blank">Instagram</a>
+    </div>
+    
+    <script src="../Script/script.js"></script>
+    </body>
+    </html>

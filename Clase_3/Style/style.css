@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño total de los elementos */
+  }
+ /* Estilos para el body */
+  body {
+    background-color: rgba(241, 241, 241, 0.945); /* Fondo semi-transparente */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Quita márgenes por defecto del navegador */
+ 
+  }
+  
+  /* Encabezado*/
+  .header {
+    padding: 10px;
+    text-align: center;
+    background: #df3333; /* Color de fondo */
+    color: white; /* texto */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 15px; /* Espacio entre logo y texto */
+    font-size: 15px;
+    font-family: 'Times New Roman', Times;
+    
+  }
+  .header .logo {
+    height: 60px; /* Ajusta tamaño del logo */
+    width: auto; /* Mantiene proporción */
+}
+    
+  /* Barra de navegación que se queda pegada arriba al hacer scroll */
+  .navbar {
+    overflow: hidden; /* Evita que el contenido se desborde */
+    background-color:  #772b2b; /* Color de fondo */
+    position: sticky; /* Fija la barra de navegación */
+    top: 0;  /* Posición en la parte superior */
+  }
+  
+  /* enlaces */
+  .navbar a {
+    float: left; /* Se colocan uno al lado del otro */
+    display: block; /* Se muestran como bloques */
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Espaciado entre texto y borde */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+
+  }
+  /* Cambia el color de los enlaces al pasar el mouse */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+  /* Estilo para el botón de modo oscuro */
+  .dark-mode-toggle {
+    float: right; /* Coloca el botón a la derecha */
+    display: flex; /* Muestra como un bloque flexible */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 10px 10px; /* Espaciado entre texto y borde */
+    color: white; 
+  }
+  
+  /* Estilo para el botón de modo oscuro al pasar el mouse */
+  .dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+
+
+.dark-mode .navbar a:hover {
+    background-color: #444;
+    color: white;
+}
+  
+  /* Sección principal */
+  .main {   
+    text-align: justify; 
+    padding: 20px; /* Espaciado interno */
+  }
+  .main h1,h2 {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Times New Roman', Times;
+  }
+  .main iframe {
+    width: 100%; /* Ancho completo */
+    height: 500px; /* Altura de la sección */
+    border: none; /* Sin borde */
+    margin-top: 20px; /* Espacio arriba del iframe */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+ /* Estilo de contenedor de imagenes */
+  .img img {
+    background-color: #aaa;
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; 
+    width: 100%;
+    height: 500px; /* Altura de las imágenes */
+    border : 2px solid #ccc; /* Borde alrededor de las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Pie de página */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    color : white;
+    background-color: #212121;
+  }
+  .footer a {
+    color: #ccc;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  
+  }
+/* imgenes de la pagina nosotros */
+  div.scroll-container {
+    background-color: #333; /* Color de fondo */
+    overflow: auto; /* Habilita el scroll si es necesario */
+    white-space: nowrap; /* Evita que las imágenes se envuelvan */
+    padding: 0; /* Espaciado interno */
+  }
+  
+  div.scroll-container img {
+    padding: 10px; /* Espaciado entre imágenes */
+    height: 400px;
+    width: 600px;
+  
+  } 
+
+/* Las columnas: Tres columnas de igual tamaño flotando una al lado de la otra */
+.column {
+  float: left; 
+  width: 31.70%;
+  margin: 15px 10px;
+  padding: 50px; /* Espaciado interno */
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer; /* Cambia el cursor a "manita" cuando pasas sobre la columna */
+  color: white;
+  background-color: #969696; /* Color inicial */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave de 0.3 segundos en todos los cambios al pasar el mouse */
+
+}
+
+.column:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Contenedor desplegable */
+.containerTab {
+  padding: 20px; /* Espaciado interno */
+  display : none; /* Oculto por defecto */
+  color: rgb(0, 0, 0);
+  background-color: #dddddd;
+  margin-top: 20px; /* Espacio arriba del contenedor */
+  border-radius: 10px;
+}
+/* Después de las columnas, se "limpian" los flotantes para evitar que el siguiente contenido suba */
+.row:after {
+  content: ""; /* Se inserta un elemento vacío */
+  display: table; /* Se comporta como una tabla */
+  clear: both; /* Limpia los flotantes, para que los elementos de abajo empiecen en una nueva línea */
+}
+
+/* Botón de cerrar */
+.closebtn {
+  float: right;  /* Posiciona el botón a la derecha */
+  color: white;
+  margin : 0;
+  font-size: 30px; 
+  cursor: pointer;
+}
+/*pagina de producto */
+.producto { 
+  display: flex; /* Utiliza flexbox para organizar los productos */
+  flex-wrap: wrap; /* Permite que los productos se ajusten a múltiples líneas si es necesario */
+  gap: 20px; /* Espacio entre productos */
+  justify-content: center; /* Centra los productos horizontalmente */
+}
+
+/* Estilo de la tarjeta del producto */
+.product-card {
+  width: 250px; /* Ancho de la tarjeta */
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 15px;
+  text-align: center;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+}
+/* Estilo del título del producto */
+.product-card img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+/* Estilo del nombre del producto en la tabla */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse; /* Colapsa los bordes de la tabla */
+  margin-top: 30px;
+  background-color: white;
+}
+/* Estilo de la tabla de comparación */
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+/* Estilo de las celdas de la tabla */
+.comparison-table th {
+  background-color: #772b2b;
+  color: white;
+}
+/* Estilo de la pagina noticias */
+.noticia {
+  border: 1px solid #ccc; /* Borde alrededor de la noticia */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 30px; /* Espacio entre noticias */
+  padding: 15px; /* Espaciado interno */
+  background-color: #f9f9f9;
+}
+/* Estilo de la imagen dentro de la noticia */
+.noticia img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsionarse */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 10px 0;
+}
+
+.noticia button {
+  background-color: #7c1414; 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.noticia button:hover {
+  background-color: #bd2c2c;
+}
+
+/* Estilo de la sección de contacto */
+.contacto-container {
+  max-width: 800px;
+  text-align: left;
+  margin: auto;
+  padding: 20px;
+  background-color: #e9e9e9; 
+  border-radius: 10px;
+  color : #333;
+  margin-bottom: 20px;
+}
+
+.contacto-info {
+  margin-bottom: 20px;
+  color: #241d1d;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  border: 1px solid #dcdcdc
+}
+.contacto-info a {
+  color: #000000; /* Color de los enlaces */
+  float : none; /* Evita que los enlaces floten */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+.contacto-info a:hover {
+  text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: Arial;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}
+/* Estilo del mapa de Google */
+.iframe {
+  border: none; 
+  margin-top: 30px; 
+  border-radius: 10px; 
+  width: 100%;
+}
+.responsabilidad-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Estilo para el bloque de texto */
+.responsabilidad-seccion .texto {
+  flex: 1 1 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color:#212121;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(17, 16, 16, 0.2);
+}
+
+/* Estilo para el bloque de imagen */
+.responsabilidad-seccion .imagen {
+  flex: 1 1 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.responsabilidad-seccion .imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.responsabilidad-seccion h2 {
+  font-size: 28px;
+  color: #d32f2f;
+ text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.iframe {
+  width: 800px;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.enlaces a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  background-color: #d32f2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.enlaces a:hover {
+  background-color: #b71c1c;
+}

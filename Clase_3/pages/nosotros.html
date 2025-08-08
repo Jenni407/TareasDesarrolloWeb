@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca - Cola</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+
+    <div class="header">
+      <img src="../Imagenes/logo.png" alt="Logo Coca-Cola" class="logo">
+      <h1>Nuestra gente impulsa nuestro propósito</h1>
+    </div>
+    
+    <div class="navbar">
+      <a href="index.html" >Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="noticias.html">Noticias </a>
+      <a href="sostenibilidad.html">Responsabilidad Social</a>
+      <a href="contacto.html">Contacto</a>
+
+      <div class="dark-mode-toggle">
+        <label for="darkModeToggle">Modo Oscuro</label>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle"> 
+          <span class="slider"></span>
+      </label>
+    </div>
+    </div>
+
+      <div class="main">
+        
+<div class="row">
+  <div class="column" onclick="openTab('b1');">
+  Misión
+  </div>
+  <div class="column" onclick="openTab('b2');">
+   Visión
+  </div>
+  <div class="column" onclick="openTab('b3');">
+   Valores
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <p>Nuestra misión es refrescar el mundo, Inspirar momentos de felicidad, Crear valor para sus accionistas y la sociedad.</p>
+</div>
+
+<div id="b2" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <p>Nuestra visión es crear las marcas y la selección de bebidas que la gente adora, para refrescar su cuerpo y espíritu. Y hacerlo de maneras que creen un negocio más sostenible y un futuro compartido mejor que marque la diferencia en la vida de las personas, las comunidades y nuestro planeta.</p>
+</div>
+
+<div id="b3" class="containerTab">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <p>Nuestros valores son la base de nuestra cultura y guían nuestras acciones y decisiones. Estos valores nos ayudan a construir relaciones sólidas con nuestros empleados, clientes y comunidades, y a mantener nuestra reputación como una empresa responsable y ética.</p>
+  <ul>
+    <li><b>Liderazgo:</b> La valentía de moldear un futuro mejor.</li>
+    <li><b>Colaboración:</b> Aprovechar el genio colectivo.</li>
+    <li><b>Integridad:</b> Ser auténtico y actuar con honestidad.</li>
+    <li><b>Responsabilidad:</b> Asumir las consecuencias de las acciones.</li>
+    <li><b>Pasión:</b> Comprometerse con el corazón y la mente.</li>
+    <li><b>Diversidad:</b> Ser inclusivos y valorar la diversidad.</li>
+    <li><b>Calidad:</b> Hacer las cosas bien y buscar la excelencia.</li>
+  </ul>
+</div>
+        <h1>El nacimiento de una idea refrescante.</h1>
+        <p>En 1886, en la ciudad de Atlanta, Georgia, el Dr. John Stith Pemberton, un farmacéutico local, creó una fórmula para
+            una bebida que inicialmente se vendió como un tónico para el cerebro y los nervios. La bebida, que contenía hojas de
+            coca y nueces de cola, se llamó Coca-Cola y se promocionó por sus supuestos beneficios medicinales. Sin embargo, lo que
+            realmente hizo que Coca-Cola se destacara fue su sabor único y refrescante, que rápidamente ganó popularidad entre los
+            consumidores.
+        </p>
+        <h2><b>Historia de Coca-Cola</b></h2>
+      <p> El 8 de mayo de 1886, la Coca-Cola fue vendida por primera vez en una farmacia del barrio de Five Points (Atlanta).
+        La bebida se servía en una fuente de soda y se proporcionaba como medio eficaz para aliviar el cansancio físico y
+        mental. El negocio comenzó a crecer lentamente, pero Pemberton había sido diagnosticado con una enfermedad mortal, por
+        lo que vendió los derechos de la bebida a su socio Frank Robinson, quien fue el encargado de dar el nombre y el
+        reconocible logotipo a Coca-Cola, la caligrafía Spencerian.
+      
+        No obstante, en 1888, a raíz de sus problemas económicos, Robinson vendió los derechos a Asa Candler, un empresario
+        que fue clave para la expansión de la bebida. Por ejemplo, implementó el embotellado de Coca-Cola en 1899. Igualmente,
+        con el cambio en las actitudes sociales, en 1929, el refresco sustituyó la cocaína (9 mg por vaso) por la cafeína.
+      </p>
+      <h2>Evolución y expansión</h2>
+        <p>A lo largo de los años, Coca-Cola ha evolucionado y se ha adaptado a los cambios en el mercado y las preferencias de los consumidores. La compañía ha introducido una variedad de productos, incluyendo Diet Coke, Coca-Cola Zero Sugar y diferentes sabores y tamaños para satisfacer las necesidades de sus clientes.
+        </p>
+        <h1>Galeria de la historia de Coca-Cola</h1>
+        <div class="scroll-container">
+          <img src="../Imagenes/historia1.jpg" alt="farmacia" >
+          <img src="../Imagenes/historia3.jpg" alt="servicio" >
+          <img src="../Imagenes/historia2.jpg" alt="embotellado">
+          <img src="../Imagenes/historia4.jpg" alt="anuncio">
+        </div>
+
+      </div>
+    
+    <div class="footer">
+      <p>&copy; 2025 Coca-Cola Company. </p>
+      <p>Síguenos en nuestras redes sociales: 
+        <a href="https://www.facebook.com/cocacola" target="_blank">Facebook</a> |  
+        <a href="https://www.instagram.com/cocacola" target="_blank">Instagram</a>
+    </div>
+    
+    <script src="../Script/script.js"></script>
+    </body>
+    </html>

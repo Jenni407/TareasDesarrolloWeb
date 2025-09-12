@@ -1,0 +1,31 @@
+.pago-card {
+  max-width: 700px;
+  margin: 90px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #c0dfab;
+  position: relative; 
+  z-index: 1;
+  font-family: 'Arial', sans-serif;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-pagar {
+  font-size: 18px;
+  padding: 12px 40px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(60, 145, 27);
+}

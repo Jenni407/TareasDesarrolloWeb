@@ -1,0 +1,127 @@
+.contenedor {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 18px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; 
+  z-index: 1;
+}
+
+h2 {
+  text-align: center;
+  color: #0a4e9b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla th {
+  background-color: #0c841c;
+  color: white;
+}
+
+.tabla tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn-agregar {
+  margin: 15px 15px 15px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background-color: #085713;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  gap: 6px;
+}
+
+.btn-agregar:hover {
+  background-color: #0f8a2a;
+}
+
+.Empleado-card {
+  max-width: 700px;
+  margin: 90px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #c0dfab;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.formulario-empleado button {
+  background-color: #0b9c60;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario-empleado button:hover {
+  background-color: #24bd2b;
+}
+.btn-editar {
+  background-color: rgb(60, 145, 27);
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-editar:hover {
+  background-color: #04350b;
+}
+.btn-eliminar {
+  background-color: #e44848;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-eliminar:hover {
+  background-color: #cc0000;
+}
+
+.acciones {
+  display: flex;
+  gap: 8px; /* Espacio entre los botones */
+  justify-content: center; /* Opcional: centra horizontalmente */
+  align-items: center;     /* Opcional: centra verticalmente */
+}

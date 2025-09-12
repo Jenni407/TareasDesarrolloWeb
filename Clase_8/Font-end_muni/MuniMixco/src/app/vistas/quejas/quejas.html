@@ -1,0 +1,100 @@
+<div class="contenedor">
+  <h2>Lista de Empleados</h2>
+  
+  <!-- Tabla de empleados -->
+  <div *ngIf="cargando">Cargando empleados...</div>
+
+  <table *ngIf="!cargando && empleados.length > 0" class="tabla">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Puesto</th>
+        <th>Edad</th>
+        <th>Salario</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of empleados">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.nombre }}</td>
+        <td>{{ emp.puesto }}</td>
+        <td>{{ emp.edad }}</td>
+        <td>Q {{ emp.salario | number:'1.2-2' }}</td>
+        <td>
+          <div class="acciones">
+          <button (click)="editarEmpleado(emp)"class ="btn-editar">
+            <mat-icon>create</mat-icon>Editar</button>
+          <button (click)="eliminarEmpleado(emp.id)" class ="btn-eliminar">
+            <mat-icon>delete_sweep</mat-icon>Eliminar 
+          </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!cargando && empleados.length === 0">
+    <p>No hay empleados registrados.</p>
+  </div>
+
+  <button (click)="toggleFormulario()" class="btn-agregar">
+    <mat-icon>account_box</mat-icon>
+    {{ mostrarFormulario ? (modoEdicion ? 'Cancelar edición' : 'Cancelar') : 'Registrar empleado' }}
+  </button>
+
+  <!-- Formulario -->
+  <div *ngIf="mostrarFormulario" class="formulario-empleado">
+    <mat-card class="Empleado-card">
+      <mat-card-header>
+      <mat-card-title>Empleado</mat-card-title>
+      </mat-card-header>
+    
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="modoEdicion ? guardarEdicion() : agregarNuevoEmpleado()">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="nombre" placeholder="Escribe nombre del empleado" required>
+            <mat-error *ngIf="form.get('nombre')?.hasError('required')">
+              Este campo es obligatorio.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Puesto</mat-label>
+            <input matInput formControlName="puesto" placeholder="Escribe el puesto del empleado" required>
+            <mat-error *ngIf="form.get('puesto')?.hasError('required')">
+              Este campo es obligatorio.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Edad</mat-label>
+            <input matInput formControlName="edad" type="number" placeholder="Ingrese la edad" required>
+            <mat-error *ngIf="form.get('edad')?.hasError('required')">
+              Este campo es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="form.get('edad')?.hasError('min')">
+              La edad debe ser mayor a 0.
+            </mat-error>
+          </mat-form-field>
+      
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Salario</mat-label>
+            <input matInput formControlName="salario" type="number" placeholder="Ingrese el salario" required>
+            <mat-error *ngIf="form.get('salario')?.hasError('required')">
+              Este campo es obligatorio.
+            </mat-error>
+            <mat-error *ngIf="form.get('salario')?.hasError('min')">
+              El monto debe ser mayor a 0.
+            </mat-error>
+          </mat-form-field>
+      </form>
+      <button (click)="modoEdicion ? guardarEdicion() : agregarNuevoEmpleado()">
+        {{ modoEdicion ? 'Guardar Cambios' : 'Agregar' }}
+      </button>
+      </mat-card-content>
+      </mat-card>
+  </div>
+</div>
